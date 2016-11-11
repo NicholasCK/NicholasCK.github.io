@@ -1,0 +1,732 @@
+.col-xs-12{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+
+/*CIRCLE NAVE*/
+
+#menu{
+	display: none;
+}
+
+/*PRELOADER*/
+
+
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+     z-index: 999;
+    height: 100vh;
+    width: 100%;
+ }
+
+
+
+#status  {
+	 font-family: 'Abril Fatface', cursive;
+	 font-size: 120px;
+	 color:gold;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 25%;
+     text-align: center;
+     /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/a7/2f/fd/a72ffd6fe16417fabd51b58f61f40341.gif);*/
+     background-repeat: no-repeat;
+     background-position: center;
+     /*margin: -100px 0 0 -100px;*/
+ }
+
+
+
+
+
+
+
+
+
+
+/*SIDENAV BAR*/
+#sidebarWrapper{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 5;
+    overflow: hidden;
+    text-align: center;
+    transition: visibility 250ms linear, opacity 250ms ease-in-out;
+    display: none;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+#sidebar{
+	position: relative;
+    width: 100%;
+    height: 100%;
+}
+ #sidebarNav{
+ 	width: 100%;
+ 	height: 100%;
+ 	margin-top: 5%;
+ }
+
+
+ #sidebarNav ul{
+ 	padding-left: 0px;
+ 	
+ }
+
+#sidebarNav a{
+	color: white;
+	font-size:60px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-decoration: none;
+	display: block;
+
+}
+
+#sidebarNav a:hover{
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+}
+
+
+
+
+/*FIXED NAVBAR*/
+
+#header{
+	position: fixed;
+	bottom: 10px;
+	width: 100%
+	height:50px;
+	z-index: 4;
+	margin-left: 10px;
+
+}
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 45px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  right: 6px;
+  height: 4px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger--htx {
+  background-color: rgba(0,0,0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*LANDING*/
+
+#landing{
+	background-color: red;
+	overflow: hidden;
+}
+
+video{
+	position: absolute;
+	z-index: 1;
+	min-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	top: 0px;
+	bottom: 0px;
+	height: 100vh !important;
+	overflow-y: hidden;
+}
+
+#landingText{
+	text-align: center;
+	/*font-family: 'Abril Fatface', cursive;*/
+	z-index: 2;
+	color: whitesmoke;
+	position: absolute;
+	width: 100%;
+}
+#name{
+	font-size: 100px;
+	margin-top: 20px;
+	font-family: 'Abril Fatface', cursive;
+}
+#titles{
+	font-size: 25px;
+	font-family: 'Raleway' sans-serif;
+	font-weight: lighter;
+
+}
+
+
+
+/*MEET & GREET*/
+/*MEET & GREET*/
+
+#bio{
+	background-color: snow;
+	z-index: 2;
+}
+
+/*BIO TEXT*/
+
+#bioText{
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 10%;
+	margin-bottom: 50px;
+	color: black;
+	 
+}
+
+
+#bioHeader{
+	font-size: 40px;
+	font-family: 'Abril Fatface', cursive;
+	margin-bottom: 50px;
+	text-align: right;
+	border-bottom: 2px solid black;
+}
+
+#bioPara{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+
+
+/*BIO ICONS*/
+
+#bioIcons img{
+	width: 64px;
+	height: 64px;
+	margin-top: 50px;
+}
+
+
+/*BIO PLAYER*/
+
+#bioPlayer{
+	border-left: 1px solid black;
+}
+
+iframe{
+	height: 100vh;
+	min-width: 100%
+}
+
+
+
+
+/*PORTFOLIO*/
+/*PORTFOLIO*/
+/*PORTFOLIO*/
+
+#portfolio{
+	background-color: white;
+	position: relative;
+	
+}
+
+#workSide{
+	height: 100vh;
+	border-right: 1px solid black;
+}
+
+
+/*MAKE TEXT VISABLE WITH HOVER*/
+
+.image-hover-text{
+  position: absolute;
+  top: 0px;
+  width: 100%;  
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 0.2s linear;
+}
+
+.image-hover-text p{
+	margin-top: 10%;
+
+}
+
+.image-hover-text:hover{
+  opacity: 1;
+}
+
+
+.image-hover-text-bubble 
+{
+  position: relative;
+  box-sizing: border-box;
+  top: 0; left: 0; right: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 0%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 20px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+
+
+
+/*PORT PIECE 1*/
+
+
+
+
+#pongContainer{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  transition: all 0.2s linear;
+}
+
+#pongImg{
+ display: block;
+ height: 100vh;
+ width: 100%;
+}
+
+/* Make the image round */
+#pongImg img{
+
+  border-radius: 0%;
+  width: 100%;
+  height: 25%;
+}
+
+#pongContainer a{
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+}
+
+#pongContainer p{
+	color: #ffbee5;
+}
+
+
+.portOne{
+	background-color: goldenrod;
+}
+
+
+
+/*PORT PIECE 2*/
+
+
+
+
+#relaxrContainer{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  transition: all 0.2s linear;
+}
+
+#relaxrImg{
+ display: block;
+ height: 100vh;
+ width: 100%;
+}
+
+/* Make the image round */
+#relaxrImg img{
+  border-radius: 0%;
+  width: 100%;
+  height: 25%;
+}
+
+#relaxrContainer a{
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+}
+
+#relaxrContainer p{
+	color: white;
+}
+
+
+.portTwo{
+	background-color: #033048;
+
+}
+
+
+
+
+
+
+/*PORT PIECE 3*/
+
+
+
+#spotDotContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  transition: all 0.2s linear;
+}
+
+#spotDotImg {
+ display: block;
+ height: 100vh;
+ width: 100%;
+}
+/* Make the image round */
+#spotDotImg img{
+
+  border-radius: 0%;
+  width: 100%;
+  height: 25%;
+}
+
+#spotDotContainer a{
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+}
+
+#spotDotContainer p{
+	color: white;
+}
+
+
+.portThree{
+	background-color: teal; 
+
+}
+
+
+/*PORT PIECE 4*/
+
+
+
+#startupMatchContainer{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  transition: all 0.2s linear;
+}
+
+#startupMatchImg{
+ display: block;
+ height: 100vh;
+ width: 100%;
+}
+ /*Make the image round*/ 
+#startupMatchImg img{
+
+  border-radius: 0%;
+  width: 100%;
+  height: 25%;
+}
+
+#startupMatchContainer a{
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+}
+
+#startupMatchContainer p{
+	color: yellow;
+}
+
+
+.portFour{
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+/*SKILLS SIDE*/
+/*SKILLS SIDE*/
+
+/*#skillSide{
+	height: 100vh;
+	padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 13%;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: black;
+    position: absolute;
+    
+    
+}
+*/
+#portfolioSide{
+	/*height: 100vh;*/
+	
+}
+
+/*PORTFOLIO TEXT SECTION*/
+
+#portfolioText{
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 25px;
+	color: black;
+	/*position: absolute;*/
+
+
+}
+
+/*PORTFOLIO HEADER*/
+
+
+#portfolioHeader{
+ 	font-size: 40px;
+	font-family: 'Abril Fatface', cursive;
+	margin-bottom: 50px;
+	margin-top: 25px;
+	text-align: left;
+	border-bottom: 2px solid black;
+
+
+}
+
+/*PORTFOLIO PARAGRAPH*/
+
+.portfolioPara p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	margin-bottom: 5%;
+	}
+
+
+
+
+/*SKILLS BARS*/
+
+article{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	margin-top: 5%;
+	overflow: hidden;
+}
+
+.percentage-bar {
+    background: #fff;
+    display: block;
+    height: 35px;
+    margin-bottom: 15px;
+    position: relative;
+    transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    -webkit-transition-property: width, background-color;
+    width: 100%;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 120px;
+}
+
+.title span {
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.bar {
+    height: 35px;
+    width: 0px;
+}
+
+.percent {
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+
+section.percentage-bar:first-child div.title { background: black; }
+section.percentage-bar:first-child div.bar { background: #525252; }
+
+section.percentage-bar:nth-child(2) div.title { background: black; }
+section.percentage-bar:nth-child(2) div.bar { background: #525252; }
+
+section.percentage-bar:nth-child(3) div.title { background: black; }
+section.percentage-bar:nth-child(3) div.bar { background:  #525252; }
+
+section.percentage-bar:nth-child(4) div.title { background: black; }
+section.percentage-bar:nth-child(4) div.bar { background: #525252; }
+
+section.percentage-bar:nth-child(5) div.title { background: black; }
+section.percentage-bar:nth-child(5) div.bar { background: #525252; }
+
+
+section.percentage-bar:last-child div.title { background: black; }
+section.percentage-bar:last-child div.bar { background: #525252; }
+
+
+
+
+
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+/*CONTACT*/
+
+#contact{
+	background-color: whitesmoke;
+	
+}
+
+#contactHeader{
+	height: 100vh;
+	width: 50%;
+	color: black;
+}
+
+#contactHeader p{
+	font-family: 'Abril Fatface', cursive;
+	font-size: 100px;
+	margin-top: 40%;
+	border-bottom: 1px solid black;
+	margin-left: 20px;
+
+}
+
+#contactIcons{
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	position: absolute;
+}
+
+#contactIcons img{
+	height: 80px;
+	width: 80px;
+}
+
+figcaption{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	margin-top: 20px;
+	color: white;
+}
+
+#phone{
+	margin-top: 12%;
+	margin-bottom:10%;
+}
+
+#email{
+	margin-bottom:10%;
+}
+#email a{
+	text-decoration: none;
+	color: black;
+}
+
+#location{}
+
+
+
+
+
+
+
+
