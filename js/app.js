@@ -20,7 +20,9 @@ $(document).ready(function() {
 
 // STATUS BARS IN PORTFOLIO SECTION //
 
-$(document).ready(function() {			
+$(document).ready(function() {	
+	console.log('');
+
 	$('#showExamples').click(function(e){
 		e.stopPropagation();
 		e.preventDefault();
