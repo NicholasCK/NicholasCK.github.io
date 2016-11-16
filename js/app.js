@@ -7,7 +7,7 @@ $(document).ready(function() {
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
 				responsiveWidth: 1100
-				// responsive:624
+				
 
 
 
@@ -95,7 +95,7 @@ $( "#sidebarWrapper" ).click(function() {
 })();
 
 
-PRELOADER
+// PRELOADER
 
 jQuery(window).on('load',function() {
        
