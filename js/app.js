@@ -6,8 +6,8 @@ $(document).ready(function() {
 				// navigation: false,
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
-				// responsiveWidth: 1100
-				responsive:624
+				responsiveWidth: 1100
+				// responsive:624
 
 
 
@@ -95,15 +95,15 @@ $( "#sidebarWrapper" ).click(function() {
 })();
 
 
-// PRELOADER
+PRELOADER
 
-// jQuery(window).on('load',function() {
+jQuery(window).on('load',function() {
        
-//    jQuery("#status").delay(300).fadeOut("slow");   
+   jQuery("#status").delay(300).fadeOut("slow");   
 
-//    jQuery("#preloader").delay(300).fadeOut("slow");
+   jQuery("#preloader").delay(300).fadeOut("slow");
 
-// });
+});
 
 
 
