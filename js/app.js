@@ -97,41 +97,41 @@ $( "#sidebarWrapper" ).click(function() {
 
 // PRELOADER
 
-jQuery(window).on('load',function() {
+// jQuery(window).on('load',function() {
        
-   jQuery("#status").delay(300).fadeOut("slow");   
+//    jQuery("#status").delay(300).fadeOut("slow");   
 
-   jQuery("#preloader").delay(300).fadeOut("slow");
+//    jQuery("#preloader").delay(300).fadeOut("slow");
 
-});
-
-
+// });
 
 
 
 
 
 
-var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+
+// var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	
-	if (isIOS) {
+// 	if (isIOS) {
  
-		var canvasVideo = new CanvasVideoPlayer({
-			videoSelector: '.video',
-			canvasSelector: '.canvas',
-			timelineSelector: false,
-			autoplay: true,
-			makeLoop: true,
-			pauseOnClick: false,
-			audio: false
-		});
+// 		var canvasVideo = new CanvasVideoPlayer({
+// 			videoSelector: '.video',
+// 			canvasSelector: '.canvas',
+// 			timelineSelector: false,
+// 			autoplay: true,
+// 			makeLoop: true,
+// 			pauseOnClick: false,
+// 			audio: false
+// 		});
 		
-	}else {
+// 	}else {
 		
-		// Use HTML5 video
-		document.querySelectorAll('.canvas')[0].style.display = 'none';
+// 		// Use HTML5 video
+// 		document.querySelectorAll('.canvas')[0].style.display = 'none';
 		
-	}	
+// 	}	
 
 
 
