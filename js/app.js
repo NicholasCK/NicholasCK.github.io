@@ -7,6 +7,7 @@ $(document).ready(function() {
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
 				responsiveWidth: 1100
+				responsiveHeight:624
 
 
 
