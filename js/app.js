@@ -95,25 +95,6 @@ $( "#sidebarWrapper" ).click(function() {
 })();
 
 
-
-function setAllowScrolling(value, directions){
-            if(typeof directions !== 'undefined'){
-                directions = directions.replace(/ /g,'').split(',');
-
-                $.each(directions, function (index, direction){
-                    setIsScrollAllowed(value, direction, 'm');
-                });
-            }
-            else if(value){
-                setMouseWheelScrolling(true);
-                addTouchHandler();
-            }else{
-                setMouseWheelScrolling(false);
-                removeTouchHandler();
-            }
-        }
-
-
 // PRELOADER
 
 // jQuery(window).on('load',function() {
