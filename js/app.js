@@ -7,7 +7,7 @@ $(document).ready(function() {
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
                 // responsiveWidth: 1100,
-                responsive: 1100,
+                
 
 
 
@@ -107,8 +107,8 @@ $( "#sidebarWrapper" ).click(function() {
 
 // });
 
-var SCROLLABLE =            'fp-scrollable';
-    var SCROLLABLE_SEL =        '.' + SCROLLABLE;
+// var SCROLLABLE =            'fp-scrollable';
+//     var SCROLLABLE_SEL =        '.' + SCROLLABLE;
 
 
 
@@ -116,70 +116,70 @@ var SCROLLABLE =            'fp-scrollable';
 
 
 
-function setResponsive(active){
-            var isResponsive = $body.hasClass(RESPONSIVE);
+// function setResponsive(active){
+//             var isResponsive = $body.hasClass(RESPONSIVE);
 
-            if(active){
-                if(!isResponsive){
-                    setAutoScrolling(false, 'internal');
-                    setFitToSection(false, 'internal');
-                    $(SECTION_NAV_SEL).hide();
-                    $body.addClass(RESPONSIVE);
-                    $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
-                }
-            }
-            else if(isResponsive){
-                setAutoScrolling(originals.autoScrolling, 'internal');
-                setFitToSection(originals.autoScrolling, 'internal');
-                $(SECTION_NAV_SEL).show();
-                $body.removeClass(RESPONSIVE);
-                $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
-            }
-        }
+//             if(active){
+//                 if(!isResponsive){
+//                     setAutoScrolling(false, 'internal');
+//                     setFitToSection(false, 'internal');
+//                     $(SECTION_NAV_SEL).hide();
+//                     $body.addClass(RESPONSIVE);
+//                     $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
+//                 }
+//             }
+//             else if(isResponsive){
+//                 setAutoScrolling(originals.autoScrolling, 'internal');
+//                 setFitToSection(originals.autoScrolling, 'internal');
+//                 $(SECTION_NAV_SEL).show();
+//                 $body.removeClass(RESPONSIVE);
+//                 $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
+//             }
+//         }
 
-        function getFullpageData(){
-            return {
-                options: options,
-                internals: {
-                    getXmovement: getXmovement,
-                    removeAnimation: removeAnimation,
-                    getTransforms: getTransforms,
-                    lazyLoad: lazyLoad,
-                    addAnimation: addAnimation,
-                    performHorizontalMove: performHorizontalMove,
-                    silentLandscapeScroll: silentLandscapeScroll,
-                    keepSlidesPosition: keepSlidesPosition,
-                    silentScroll: silentScroll,
-                    styleSlides: styleSlides
-                }
-            };
-        }
+//         function getFullpageData(){
+//             return {
+//                 options: options,
+//                 internals: {
+//                     getXmovement: getXmovement,
+//                     removeAnimation: removeAnimation,
+//                     getTransforms: getTransforms,
+//                     lazyLoad: lazyLoad,
+//                     addAnimation: addAnimation,
+//                     performHorizontalMove: performHorizontalMove,
+//                     silentLandscapeScroll: silentLandscapeScroll,
+//                     keepSlidesPosition: keepSlidesPosition,
+//                     silentScroll: silentScroll,
+//                     styleSlides: styleSlides
+//                 }
+//             };
+//         }
 
-        if($(this).length){
-            //public functions
-            FP.setAutoScrolling = setAutoScrolling;
-            FP.setRecordHistory = setRecordHistory;
-            FP.setScrollingSpeed = setScrollingSpeed;
-            FP.setFitToSection = setFitToSection;
-            FP.setLockAnchors = setLockAnchors;
-            FP.setMouseWheelScrolling = setMouseWheelScrolling;
-            FP.setAllowScrolling = setAllowScrolling;
-            FP.setKeyboardScrolling = setKeyboardScrolling;
-            FP.moveSectionUp = moveSectionUp;
-            FP.moveSectionDown = moveSectionDown;
-            FP.silentMoveTo = silentMoveTo;
-            FP.moveTo = moveTo;
-            FP.moveSlideRight = moveSlideRight;
-            FP.moveSlideLeft = moveSlideLeft;
-            FP.reBuild = reBuild;
-            FP.setResponsive = setResponsive;
-            FP.getFullpageData = getFullpageData;
-            FP.destroy = destroy;
+//         if($(this).length){
+//             //public functions
+//             FP.setAutoScrolling = setAutoScrolling;
+//             FP.setRecordHistory = setRecordHistory;
+//             FP.setScrollingSpeed = setScrollingSpeed;
+//             FP.setFitToSection = setFitToSection;
+//             FP.setLockAnchors = setLockAnchors;
+//             FP.setMouseWheelScrolling = setMouseWheelScrolling;
+//             FP.setAllowScrolling = setAllowScrolling;
+//             FP.setKeyboardScrolling = setKeyboardScrolling;
+//             FP.moveSectionUp = moveSectionUp;
+//             FP.moveSectionDown = moveSectionDown;
+//             FP.silentMoveTo = silentMoveTo;
+//             FP.moveTo = moveTo;
+//             FP.moveSlideRight = moveSlideRight;
+//             FP.moveSlideLeft = moveSlideLeft;
+//             FP.reBuild = reBuild;
+//             FP.setResponsive = setResponsive;
+//             FP.getFullpageData = getFullpageData;
+//             FP.destroy = destroy;
 
-            init();
+//             init();
 
-            bindEvents();
-        }
+//             bindEvents();
+//         }
 
         // function init(){
         //     //if css3 is not supported, it will use jQuery animations
@@ -198,3 +198,46 @@ function setResponsive(active){
 
 
         //      .resize(resizeHandler);
+
+
+
+
+
+
+    $(window).on('load', function() {
+    $('#preloader').hide();
+
+    if($('#fullpage').length){
+        //disabling scrolling  until page is loaded
+        $.fn.fullpage.setAllowScrolling(true);
+    }
+
+    //on load
+    resizeHandler();
+});
+
+
+
+$(window).resize(resizeHandler);
+
+
+var mySwipe = [];
+var initSwipe = false;
+function resizeHandler(){
+    if($('#fullpage').length){
+        //updating values
+        windowHeight = $(window).height();
+        windowWidth = $(window).width();
+
+        $('#home').css('min-height', windowHeight+'px');
+
+        //setting autoscroll to false when necessary
+        if(windowHeight<770){
+            $.fn.fullpage.setAutoScrolling(false);
+            $.fn.fullpage.setFitToSection(false);
+        }else{
+            if(windowWidth >= 950){
+                $.fn.fullpage.setAutoScrolling(true);
+                $.fn.fullpage.setFitToSection(true);
+            }
+        }
