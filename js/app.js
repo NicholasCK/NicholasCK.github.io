@@ -198,7 +198,3 @@ var SCROLLABLE =            'fp-scrollable';
 
 
 //              .resize(resizeHandler);
-
-
-
-
