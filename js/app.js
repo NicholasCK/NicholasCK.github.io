@@ -181,20 +181,20 @@ function setResponsive(active){
             bindEvents();
         }
 
-        function init(){
-            //if css3 is not supported, it will use jQuery animations
-            if(options.css3){
-                options.css3 = support3d();
-            }
+        // function init(){
+        //     //if css3 is not supported, it will use jQuery animations
+        //     if(options.css3){
+        //         options.css3 = support3d();
+        //     }
 
-            options.scrollBar = options.scrollBar || options.hybrid;
+        //     options.scrollBar = options.scrollBar || options.hybrid;
 
-            setOptionsFromDOM();
+        //     setOptionsFromDOM();
 
-            prepareDom();
-            setAllowScrolling(true);
+        //     prepareDom();
+        //     setAllowScrolling(true);
 
-            setAutoScrolling(options.autoScrolling, 'internal');
+        //     setAutoScrolling(options.autoScrolling, 'internal');
 
 
-             .resize(resizeHandler);
+        //      .resize(resizeHandler);
