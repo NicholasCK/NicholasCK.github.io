@@ -6,7 +6,8 @@ $(document).ready(function() {
 				// navigation: false,
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
-                responsiveWidth: 1100,
+                // responsiveWidth: 1100,
+                responsive: 1100,
 
 
 
@@ -199,9 +200,5 @@ var SCROLLABLE =            'fp-scrollable';
 //              .resize(resizeHandler);
 
 
-
-if (screen && screen.width > 1100) {
-document.write('<script type="text/javascript" src="http://your-file-path/fullpage.js"><\/script>');
-}
 
 
