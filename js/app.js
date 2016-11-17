@@ -6,6 +6,7 @@ $(document).ready(function() {
 				// navigation: false,
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
+                autoScrolling: false,
 				responsiveWidth: 1100
 				
 
