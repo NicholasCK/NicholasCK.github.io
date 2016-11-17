@@ -97,13 +97,13 @@ $( "#sidebarWrapper" ).click(function() {
 
 // PRELOADER
 
-jQuery(window).on('load',function() {
+// jQuery(window).on('load',function() {
        
-   jQuery("#status").delay(300).fadeOut("slow");   
+//    jQuery("#status").delay(300).fadeOut("slow");   
 
-   jQuery("#preloader").delay(300).fadeOut("slow");
+//    jQuery("#preloader").delay(300).fadeOut("slow");
 
-});
+// });
 
 var SCROLLABLE =            'fp-scrollable';
     var SCROLLABLE_SEL =        '.' + SCROLLABLE;
