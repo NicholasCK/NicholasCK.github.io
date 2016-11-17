@@ -201,34 +201,34 @@ function setResponsive(active){
         * Checks if the site needs to get responsive and disables autoScrolling if so.
         * A class `fp-responsive` is added to the plugin's container in case the user wants to use it for his own responsive CSS.
         */
-        function responsive(){
-            var widthLimit = options.responsive || options.responsiveWidth; //backwards compatiblity
-            var heightLimit = options.responsiveHeight;
+        // function responsive(){
+        //     var widthLimit = options.responsive || options.responsiveWidth; //backwards compatiblity
+        //     var heightLimit = options.responsiveHeight;
 
-            //only calculating what we need. Remember its called on the resize event.
-            var isBreakingPointWidth = widthLimit && $window.outerWidth() < widthLimit;
-            var isBreakingPointHeight = heightLimit && $window.height() < heightLimit;
+        //     //only calculating what we need. Remember its called on the resize event.
+        //     var isBreakingPointWidth = widthLimit && $window.outerWidth() < widthLimit;
+        //     var isBreakingPointHeight = heightLimit && $window.height() < heightLimit;
 
-            if(widthLimit && heightLimit){
-                setResponsive(isBreakingPointWidth || isBreakingPointHeight);
-            }
-            else if(widthLimit){
-                setResponsive(isBreakingPointWidth);
-            }
-            else if(heightLimit){
-                setResponsive(isBreakingPointHeight);
-            }
-        }
+        //     if(widthLimit && heightLimit){
+        //         setResponsive(isBreakingPointWidth || isBreakingPointHeight);
+        //     }
+        //     else if(widthLimit){
+        //         setResponsive(isBreakingPointWidth);
+        //     }
+        //     else if(heightLimit){
+        //         setResponsive(isBreakingPointHeight);
+        //     }
+        // }
 
 
-        function removeTouchHandler(){
-            if(isTouchDevice || isTouch){
-                //Microsoft pointers
-                var MSPointer = getMSPointer();
+        // function removeTouchHandler(){
+        //     if(isTouchDevice || isTouch){
+        //         //Microsoft pointers
+        //         var MSPointer = getMSPointer();
 
-                $(WRAPPER_SEL)
-                    .off('touchstart ' + MSPointer.down)
-                    .off('touchmove ' + MSPointer.move);
-            }
-        }
+        //         $(WRAPPER_SEL)
+        //             .off('touchstart ' + MSPointer.down)
+        //             .off('touchmove ' + MSPointer.move);
+        //     }
+        // }
 
