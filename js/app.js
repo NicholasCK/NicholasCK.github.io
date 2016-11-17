@@ -116,85 +116,85 @@ var SCROLLABLE =            'fp-scrollable';
 
 
 
-// function setResponsive(active){
-//             var isResponsive = $body.hasClass(RESPONSIVE);
+function setResponsive(active){
+            var isResponsive = $body.hasClass(RESPONSIVE);
 
-//             if(active){
-//                 if(!isResponsive){
-//                     setAutoScrolling(false, 'internal');
-//                     setFitToSection(false, 'internal');
-//                     $(SECTION_NAV_SEL).hide();
-//                     $body.addClass(RESPONSIVE);
-//                     $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
-//                 }
-//             }
-//             else if(isResponsive){
-//                 setAutoScrolling(originals.autoScrolling, 'internal');
-//                 setFitToSection(originals.autoScrolling, 'internal');
-//                 $(SECTION_NAV_SEL).show();
-//                 $body.removeClass(RESPONSIVE);
-//                 $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
-//             }
-//         }
+            if(active){
+                if(!isResponsive){
+                    setAutoScrolling(false, 'internal');
+                    setFitToSection(false, 'internal');
+                    $(SECTION_NAV_SEL).hide();
+                    $body.addClass(RESPONSIVE);
+                    $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
+                }
+            }
+            else if(isResponsive){
+                setAutoScrolling(originals.autoScrolling, 'internal');
+                setFitToSection(originals.autoScrolling, 'internal');
+                $(SECTION_NAV_SEL).show();
+                $body.removeClass(RESPONSIVE);
+                $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
+            }
+        }
 
-//         function getFullpageData(){
-//             return {
-//                 options: options,
-//                 internals: {
-//                     getXmovement: getXmovement,
-//                     removeAnimation: removeAnimation,
-//                     getTransforms: getTransforms,
-//                     lazyLoad: lazyLoad,
-//                     addAnimation: addAnimation,
-//                     performHorizontalMove: performHorizontalMove,
-//                     silentLandscapeScroll: silentLandscapeScroll,
-//                     keepSlidesPosition: keepSlidesPosition,
-//                     silentScroll: silentScroll,
-//                     styleSlides: styleSlides
-//                 }
-//             };
-//         }
+        function getFullpageData(){
+            return {
+                options: options,
+                internals: {
+                    getXmovement: getXmovement,
+                    removeAnimation: removeAnimation,
+                    getTransforms: getTransforms,
+                    lazyLoad: lazyLoad,
+                    addAnimation: addAnimation,
+                    performHorizontalMove: performHorizontalMove,
+                    silentLandscapeScroll: silentLandscapeScroll,
+                    keepSlidesPosition: keepSlidesPosition,
+                    silentScroll: silentScroll,
+                    styleSlides: styleSlides
+                }
+            };
+        }
 
-//         if($(this).length){
-//             //public functions
-//             FP.setAutoScrolling = setAutoScrolling;
-//             FP.setRecordHistory = setRecordHistory;
-//             FP.setScrollingSpeed = setScrollingSpeed;
-//             FP.setFitToSection = setFitToSection;
-//             FP.setLockAnchors = setLockAnchors;
-//             FP.setMouseWheelScrolling = setMouseWheelScrolling;
-//             FP.setAllowScrolling = setAllowScrolling;
-//             FP.setKeyboardScrolling = setKeyboardScrolling;
-//             FP.moveSectionUp = moveSectionUp;
-//             FP.moveSectionDown = moveSectionDown;
-//             FP.silentMoveTo = silentMoveTo;
-//             FP.moveTo = moveTo;
-//             FP.moveSlideRight = moveSlideRight;
-//             FP.moveSlideLeft = moveSlideLeft;
-//             FP.reBuild = reBuild;
-//             FP.setResponsive = setResponsive;
-//             FP.getFullpageData = getFullpageData;
-//             FP.destroy = destroy;
+        if($(this).length){
+            //public functions
+            FP.setAutoScrolling = setAutoScrolling;
+            FP.setRecordHistory = setRecordHistory;
+            FP.setScrollingSpeed = setScrollingSpeed;
+            FP.setFitToSection = setFitToSection;
+            FP.setLockAnchors = setLockAnchors;
+            FP.setMouseWheelScrolling = setMouseWheelScrolling;
+            FP.setAllowScrolling = setAllowScrolling;
+            FP.setKeyboardScrolling = setKeyboardScrolling;
+            FP.moveSectionUp = moveSectionUp;
+            FP.moveSectionDown = moveSectionDown;
+            FP.silentMoveTo = silentMoveTo;
+            FP.moveTo = moveTo;
+            FP.moveSlideRight = moveSlideRight;
+            FP.moveSlideLeft = moveSlideLeft;
+            FP.reBuild = reBuild;
+            FP.setResponsive = setResponsive;
+            FP.getFullpageData = getFullpageData;
+            FP.destroy = destroy;
 
-//             init();
+            init();
 
-//             bindEvents();
-//         }
+            bindEvents();
+        }
 
-//         function init(){
-//             //if css3 is not supported, it will use jQuery animations
-//             if(options.css3){
-//                 options.css3 = support3d();
-//             }
+        function init(){
+            //if css3 is not supported, it will use jQuery animations
+            if(options.css3){
+                options.css3 = support3d();
+            }
 
-//             options.scrollBar = options.scrollBar || options.hybrid;
+            options.scrollBar = options.scrollBar || options.hybrid;
 
-//             setOptionsFromDOM();
+            setOptionsFromDOM();
 
-//             prepareDom();
-//             setAllowScrolling(true);
+            prepareDom();
+            setAllowScrolling(true);
 
-//             setAutoScrolling(options.autoScrolling, 'internal');
+            setAutoScrolling(options.autoScrolling, 'internal');
 
 
-//              .resize(resizeHandler);
+             .resize(resizeHandler);
