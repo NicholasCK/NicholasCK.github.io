@@ -223,3 +223,50 @@ jQuery(window).on('load',function() {
 //                 $.fn.fullpage.setFitToSection(true);
 //             }
 //         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+resizeHandler();
+
+
+$(window).resize(resizeHandler);
+
+function resizeHandler(){
+	if($('#fullpage').length){
+		//updating values
+		windowHeight = $(window).height();
+		windowWidth = $(window).width();
+
+		$('#home').css('min-height', windowHeight+'px');
+
+		//setting autoscroll to false when necessary
+		if(windowHeight<770){
+			$.fn.fullpage.setAutoScrolling(false);
+			$.fn.fullpage.setFitToSection(false);
+		}else{
+			if(windowWidth >= 950){
+				$.fn.fullpage.setAutoScrolling(true);
+				$.fn.fullpage.setFitToSection(true);
+			}
+		}
