@@ -7,6 +7,15 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+  	/*LANDING*/
+
+  	video{
+  		visibility: hidden;
+  	}
+	
+	#giphy{
+		visibility: visible;
+	}
 
 
 
