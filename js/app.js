@@ -247,10 +247,7 @@ jQuery(window).on('load',function() {
 
 
 
-resizeHandler();
 
-
-$(window).resize(resizeHandler);
 
 function resizeHandler(){
 	if($('#fullpage').length){
@@ -265,7 +262,7 @@ function resizeHandler(){
 			$.fn.fullpage.setAutoScrolling(false);
 			$.fn.fullpage.setFitToSection(false);
 		}else{
-			if(windowWidth >= 950){
+			if(windowWidth >= 1100){
 				$.fn.fullpage.setAutoScrolling(true);
 				$.fn.fullpage.setFitToSection(true);
 			}
