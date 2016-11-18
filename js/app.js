@@ -204,17 +204,17 @@ $( "#sidebarWrapper" ).click(function() {
 
 
 
-    $(window).on('load', function() {
-    $('#preloader').hide();
+//     $(window).on('load', function() {
+//     $('#preloader').hide();
 
-    if($('#fullpage').length){
-        //disabling scrolling  until page is loaded
-        $.fn.fullpage.setAllowScrolling(true);
-    }
+//     if($('#fullpage').length){
+//         //disabling scrolling  until page is loaded
+//         $.fn.fullpage.setAllowScrolling(true);
+//     }
 
-    //on load
-    resizeHandler();
-});
+//     //on load
+//     resizeHandler();
+// });
 
 
 
