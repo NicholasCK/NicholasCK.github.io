@@ -202,23 +202,23 @@ jQuery(window).on('load',function() {
 
 
 
-var mySwipe = [];
-var initSwipe = false;
-function resizeHandler(){
-    if($('#fullpage').length){
-        //updating values
-        windowHeight = $(window).height();
-        windowWidth = $(window).width();
+// var mySwipe = [];
+// var initSwipe = false;
+// function resizeHandler(){
+//     if($('#fullpage').length){
+//         //updating values
+//         windowHeight = $(window).height();
+//         windowWidth = $(window).width();
 
-        $('#home').css('min-height', windowHeight+'px');
+//         $('#home').css('min-height', windowHeight+'px');
 
-        //setting autoscroll to false when necessary
-        if(windowHeight<770){
-            $.fn.fullpage.setAutoScrolling(false);
-            $.fn.fullpage.setFitToSection(false);
-        }else{
-            if(windowWidth >= 1100){
-                $.fn.fullpage.setAutoScrolling(true);
-                $.fn.fullpage.setFitToSection(true);
-            }
-        }
+//         //setting autoscroll to false when necessary
+//         if(windowHeight<770){
+//             $.fn.fullpage.setAutoScrolling(false);
+//             $.fn.fullpage.setFitToSection(false);
+//         }else{
+//             if(windowWidth >= 1100){
+//                 $.fn.fullpage.setAutoScrolling(true);
+//                 $.fn.fullpage.setFitToSection(true);
+//             }
+//         }
