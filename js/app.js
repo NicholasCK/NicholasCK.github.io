@@ -6,7 +6,7 @@ $(document).ready(function() {
 				// navigation: false,
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
-                // responsiveWidth: 1100,
+                responsiveWidth: 1100,
                 
 
 
@@ -99,13 +99,13 @@ $( "#sidebarWrapper" ).click(function() {
 
 // PRELOADER
 
-// jQuery(window).on('load',function() {
+jQuery(window).on('load',function() {
        
-//    jQuery("#status").delay(300).fadeOut("slow");   
+   jQuery("#status").delay(300).fadeOut("slow");   
 
-//    jQuery("#preloader").delay(300).fadeOut("slow");
+   jQuery("#preloader").delay(300).fadeOut("slow");
 
-// });
+});
 
 // var SCROLLABLE =            'fp-scrollable';
 //     var SCROLLABLE_SEL =        '.' + SCROLLABLE;
@@ -202,25 +202,6 @@ $( "#sidebarWrapper" ).click(function() {
 
 
 
-
-
-//     $(window).on('load', function() {
-//     $('#preloader').hide();
-
-//     if($('#fullpage').length){
-//         //disabling scrolling  until page is loaded
-//         $.fn.fullpage.setAllowScrolling(true);
-//     }
-
-//     //on load
-//     resizeHandler();
-// });
-
-
-
-$(window).resize(resizeHandler);
-
-
 var mySwipe = [];
 var initSwipe = false;
 function resizeHandler(){
@@ -236,7 +217,7 @@ function resizeHandler(){
             $.fn.fullpage.setAutoScrolling(false);
             $.fn.fullpage.setFitToSection(false);
         }else{
-            if(windowWidth >= 950){
+            if(windowWidth >= 1100){
                 $.fn.fullpage.setAutoScrolling(true);
                 $.fn.fullpage.setFitToSection(true);
             }
