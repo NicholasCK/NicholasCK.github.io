@@ -110,17 +110,14 @@ jQuery(window).on('load',function() {
 
 
 
-var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-
-
-function removeTouchHandler(){
+       function addTouchHandler(){
             if(isTouchDevice || isTouch){
                 //Microsoft pointers
                 var MSPointer = getMSPointer();
 
                 $(WRAPPER_SEL)
-                    .off('touchstart ' + MSPointer.down)
-                    .off('touchmove ' + MSPointer.move);
+                    .off('touchstart ' +  MSPointer.down).on('touchstart ' + MSPointer.down, touchStartHandler)
+                    .off('touchmove ' + MSPointer.move).on('touchmove ' + MSPointer.move, touchMoveHandler);
             }
         }
 
