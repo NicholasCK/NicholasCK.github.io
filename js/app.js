@@ -111,18 +111,6 @@ jQuery(window).on('load',function() {
 
 
 
-$(window).resize(function() {
-                   
-			    if ($(window).width() <= 767) {
-			       	fullPageCreated = false;    
-			    	$.fn.fullpage.destroy('all');
-			    }
-			    
-			    if ($(window).width() > 768) {
-			        createFullpage();
-			    }
-			   
-			});
 
 
 
