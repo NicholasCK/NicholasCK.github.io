@@ -111,9 +111,18 @@ jQuery(window).on('load',function() {
 
 
 
-if ($(window).width() > 768) {
- $.fn.fullpage.destroy('all');
-}
+$(window).resize(function() {
+                   
+			    if ($(window).width() <= 767) {
+			       	fullPageCreated = false;    
+			    	$.fn.fullpage.destroy('all');
+			    }
+			    
+			    if ($(window).width() > 768) {
+			        createFullpage();
+			    }
+			   
+			});
 
 
 
