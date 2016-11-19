@@ -7,7 +7,7 @@ $(document).ready(function() {
 				// navigationPosition: 'right',
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
                 responsiveWidth: 1100,
-                responsiveHeight:750,
+                // responsiveHeight:750,
                 
 
 
@@ -107,3 +107,20 @@ jQuery(window).on('load',function() {
    jQuery("#preloader").delay(300).fadeOut("slow");
 
 });
+
+
+
+var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+
+function removeTouchHandler(){
+            if(isTouchDevice || isTouch){
+                //Microsoft pointers
+                var MSPointer = getMSPointer();
+
+                $(WRAPPER_SEL)
+                    .off('touchstart ' + MSPointer.down)
+                    .off('touchmove ' + MSPointer.move);
+            }
+        }
+
