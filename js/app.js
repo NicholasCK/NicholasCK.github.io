@@ -110,9 +110,10 @@ jQuery(window).on('load',function() {
 
 var isPhoneDevice = "ontouchstart" in document.documentElement; 
 
+
 if(isPhoneDevice){
 	autoScrolling:false
-}
+};
 
 
 
