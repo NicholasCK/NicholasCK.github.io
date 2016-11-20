@@ -115,12 +115,8 @@ $(document).ready(function() {
 
             //mobile
         }
-            else{
-                //desktop               
-                // $.fn.fullpage();
-                autoScrolling: true,
-            }
-        });
+    }
+
 
 
 
