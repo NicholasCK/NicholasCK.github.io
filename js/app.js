@@ -108,13 +108,21 @@ jQuery(window).on('load',function() {
 
 });
 
+
+
 var isPhoneDevice = "ontouchstart" in document.documentElement; 
+$(document).ready(function() {
+        if(isPhoneDevice){
+            //mobile
+            autoScrolling:false
+        }
+            else{
 
-
-if(isPhoneDevice){
-	autoScrolling:false
-};
-
+            	autoScrolling:true
+                //desktop               
+                $.fn.fullpage();
+            }
+        });
 
 
 
