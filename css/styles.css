@@ -198,7 +198,7 @@ video{
 	object-fit: cover;
 	top: 0px;
 	bottom: 0px;
-	height: 100vh !important;
+	height: 100%;
 	overflow-y: hidden;
 }
 
