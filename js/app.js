@@ -114,11 +114,11 @@ var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
         if(isPhoneDevice){
             //mobile
-            autoScrolling:false
+           
         }
             else{
 
-            	autoScrolling:true
+            
                 //desktop               
                 $.fn.fullpage();
             }
