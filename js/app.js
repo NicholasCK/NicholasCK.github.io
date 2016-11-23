@@ -8,16 +8,6 @@ $(document).ready(function() {
 				// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
                 responsiveWidth: 1100,
                 // responsiveHeight:750,
-                
-
-
-
-
-
-			
-
-
-			
 			});
 		});
 
@@ -125,6 +115,21 @@ $(document).ready(function() {
         });
 
 
+        function touchStartHandler(event){
+            event.preventDefault();
+            var e = event.originalEvent;
+
+            //stopping the auto scroll to adjust to a section
+            if(options.fitToSection){
+                $htmlBody.stop();
+            }
+
+            if(isReallyTouch(e)){
+                var touchEvents = getEventsPage(e);
+                touchStartY = touchEvents.y;
+                touchStartX = touchEvents.x;
+            }
+        }
 
 
 
