@@ -10,18 +10,8 @@ $(document).ready(function() {
                 // responsiveHeight:750,
             });
 
-
-
-
-});
-
-
-// STATUS BARS IN PORTFOLIO SECTION //
-
-$(document).ready(function() {	
-	console.log('');
-
-	$('#showExamples').click(function(e){
+	//   STATUS BARS
+  $('#showExamples').click(function(e){
 		e.stopPropagation();
 		e.preventDefault();
 		$('#examplesList').toggle();
@@ -30,15 +20,37 @@ $(document).ready(function() {
 	$('html').click(function(){
 		$('#examplesList').hide();
 	});
-});
-
-$(document).ready(function() {
-	$('.percentage-bar').each(function(){
+  
+  $('.percentage-bar').each(function(){
 		$(this).find('.bar').animate({
 			width: $(this).attr('data-percent')
 		}, 6000);
 	});
 });
+
+// STATUS BARS IN PORTFOLIO SECTION //
+
+// $(document).ready(function() {	
+// 	console.log('');
+
+// 	$('#showExamples').click(function(e){
+// 		e.stopPropagation();
+// 		e.preventDefault();
+// 		$('#examplesList').toggle();
+// 	});
+	
+// 	$('html').click(function(){
+// 		$('#examplesList').hide();
+// 	});
+// });
+
+// $(document).ready(function() {
+// 	$('.percentage-bar').each(function(){
+// 		$(this).find('.bar').animate({
+// 			width: $(this).attr('data-percent')
+// 		}, 6000);
+// 	});
+// });
 
 
 // INTERACTIVE NAV MENU//
