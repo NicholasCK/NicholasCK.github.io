@@ -9,12 +9,16 @@ $(document).ready(function() {
                 responsiveWidth: 1100,
                 // responsiveHeight:750,
 			});
+
+
+
+
 		});
 
 
 // STATUS BARS IN PORTFOLIO SECTION //
 
-$(document).ready(function() {	
+$(document).ready(function(Status Bars) {	
 	console.log('');
 
 	$('#showExamples').click(function(e){
