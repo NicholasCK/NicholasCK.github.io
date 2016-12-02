@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 // STATUS BARS IN PORTFOLIO SECTION //
 
-$(document).ready(function(Status Bars) {	
+$(document).ready(function() {	
 	console.log('');
 
 	$('#showExamples').click(function(e){
@@ -95,7 +95,7 @@ $(document).ready(function() {
 // PRELOADER
 
 jQuery(window).on('load',function() {
-	
+
 	jQuery("#status").delay(300).fadeOut("slow");   
 
 	jQuery("#preloader").delay(300).fadeOut("slow");
@@ -108,11 +108,11 @@ var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
 	if(isPhoneDevice){
             //mobile
-            
+
         }
         else{
 
-        	
+
                 //desktop               
                 $.fn.fullpage();
             }
