@@ -8,6 +8,9 @@ $('#fullpage').fullpage({
 			// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
 			responsiveWidth: 1100,
             // responsiveHeight:750,
+
+
+
         });
 });
 
@@ -94,7 +97,11 @@ jQuery("#status").delay(300).fadeOut("slow");
 jQuery("#preloader").delay(300).fadeOut("slow");
 
 });
+FP.destroy = destroy;
+
+function (){
+	$.fn.fullpage.destroy('all');
+};
 
 
-$.fn.fullpage.destroy('all');
 
