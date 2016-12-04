@@ -96,12 +96,10 @@ jQuery("#status").delay(300).fadeOut("slow");
 
 jQuery("#preloader").delay(300).fadeOut("slow");
 
-});
-FP.destroy = destroy;
+$.fn.fullpage.destroy('all');
 
-function (){
-	$.fn.fullpage.destroy('all');
-};
+});
+// FP.destroy = destroy;
 
 
 
