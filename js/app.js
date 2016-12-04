@@ -96,3 +96,5 @@ jQuery("#preloader").delay(300).fadeOut("slow");
 });
 
 
+$.fn.fullpage.destroy('all');
+
