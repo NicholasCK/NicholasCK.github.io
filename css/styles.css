@@ -153,7 +153,7 @@
 	overflow: hidden;
 }
 
-video{
+/*video{
 	position: absolute;
 	z-index: 1;
 	min-height: 100%;
@@ -164,9 +164,9 @@ video{
 	height: 100vh !important;
 	overflow-y: hidden;
 }
-
+*/
 #giphy{
-  visibility: hidden;
+  /*visibility: hidden;*/
   position: absolute;
   z-index: 1;
   min-height: 100%;
