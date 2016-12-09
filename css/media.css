@@ -7,27 +7,227 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+#fullpage{
+	overflow-x:hidden; 
+}
+
+body{
+	 overflow-x: auto;
+}
   	/*LANDING*/
 
-  	video{
-  		visibility: hidden;
+  	#landingText{
+  		    margin-top: 65%;
   	}
-	
-	#giphy{
-		visibility: visible;
+
+	.name{
+	   font-size: 160px;
+    font-family: 'Yantramanav', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 900;
+    line-height: 1;
+    margin-top: 65px;
+
+	}
+	#titles{
+		margin-top: 90px;
+
 	}
 
 
+	/*BIO*/
+
+	#bio{
+	margin-top: 50px;
+	}
+
+	#bioHeader{
+		font-size: 70px;
+	}
+
+	#bioPara{
+		font-size: 45px;
+	}
+
+	iframe{
+		margin-top: 50px;
+	}
+
+	#skillsContainer{
+		height: 20vh;
+	}
 
 
+	#skillsHeader{
+		font-size: 70px;
+	}
+
+	figcaption{
+		font-size: 40px;
+	}
+
+	#portfolioHeader{
+		font-size: 70px;
+	}
 
 
+	#phoneIcon figcaption, #emailIcon figcaption, #locationIcon figcaption {
+    font-size: 40px;
+	}
 
+	#contact{
+		height: 70vh;
+	}
 
+	#contactHeader{
+		font-size: 70px;
+	}
 
 
 
 }
 
+/*
+@media only screen and (max-width: 991px) {
+	#fullpage{
+		overflow-x: hidden;
+	}
+
+	.name{
+		font-size: 120px;
+	}
+
+	.firstName{
+		margin-top: 120px;
+	}
+
+	.lastName{
+		margin-top: -30px;
+	}
+
+	#titles{
+		margin-top: -30px;
+		font-size: 40px;
+	}
+}*/
 
 
+@media only screen and (max-width: 745px) {
+	#fullpage{
+		overflow-x: hidden;
+	}
+
+	.name{
+		font-size: 90px;
+	}
+
+	.firstName{
+		margin-top: 160px;
+	}
+
+	.lastName{
+		margin-top: 0px;
+	}
+
+	#titles{
+		margin-top: 0px;
+		font-size: 30px;
+	}
+}
+
+
+@media only screen and (max-width: 610px) {
+	#fullpage{
+		overflow-x: hidden;
+	}
+
+	.name{
+		font-size: 70px;
+	}
+
+	.firstName{
+		margin-top: 220px;
+	}
+
+	.lastName{
+		margin-top: 20px;
+	}
+
+	#titles{
+		margin-top: 0px;
+		font-size: 25px;
+	}
+
+	#logoName{
+		margin-left: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 515px) {
+	#fullpage{
+		overflow-x: hidden;
+	}
+
+	.name{
+		font-size: 50px;
+	}
+
+	.firstName{
+		margin-top: 240px;
+	}
+
+	.lastName{
+		margin-top: 40px;
+	}
+
+	#titles{
+		margin-top: 0px;
+		font-size: 25px;
+	}
+
+	#logoName{
+		margin-left: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 435px) {
+	#fullpage{
+		overflow-x: hidden;
+	}
+
+	.name{
+		font-size: 35px;
+	}
+
+	.firstName{
+		margin-top: 260px;
+	}
+
+	.lastName{
+		margin-top: 60px;
+	}
+
+	#titles{
+		margin-top: 0px;
+		font-size: 20px;
+		text-align: center;
+		margin-right: 30px;
+	}
+
+	#logoName{
+		margin-left: 0px;
+	}
+
+	.nav a{
+		font-size: 10px;
+	}
+
+	#pongImg img, #startupMatchImg img, #spotDotImg img, #relaxrImg img{
+  height:360px;
+  width:360px;
+  margin-top: 25px;
+
+}
+}

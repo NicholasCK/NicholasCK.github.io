@@ -1,105 +1,72 @@
-$(document).ready(function() {
-$('#fullpage').fullpage({
-			// anchors: ['landingSec', 'bioSec', 'portfolioSec', 'contactSec'],
-			// // sectionsColor: ['#DAC500', '#1BBC9B', '#7E8F7C'],
-			// menu: '#menu',
-			// navigation: false,
-			// navigationPosition: 'right',
-			// navigationTooltips: ['Home', 'About', 'Portfolio' , 'Contact'],
-			responsiveWidth: 1100,
-            // responsiveHeight:750,
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= 500) {
 
-
-
-        });
+        // $('#logoName').show();
+        // $('#logoK').show();
+  		$('#nav').css('background-color' , 'rgba(225,225,225,0.5)');
+    }
+    else {
+        // $('#logoName').hide();
+        // $('#logoK').hide();
+        $('#nav').css('background-color' , 'rgba(225,225,225,0)');
+    }
 });
-
-// STATUS BARS IN PORTFOLIO SECTION //
-
-$(document).ready(function() {	
-$('#showExamples').click(function(e){
-	e.stopPropagation();
-	e.preventDefault();
-	$('#examplesList').toggle();
-});
-
-$('html').click(function(){
-	$('#examplesList').hide();
-});
-});
-
-$(document).ready(function() {
-$('.percentage-bar').each(function(){
-	$(this).find('.bar').animate({
-		width: $(this).attr('data-percent')
-	}, 6000);
-});
-});
-
-
-// INTERACTIVE NAV MENU//
-
-(function() {
-
-"use strict";
-
-var toggles = document.querySelectorAll(".c-hamburger");
-
-for (var i = toggles.length - 1; i >= 0; i--) {
-	var toggle = toggles[i];
-	toggleHandler(toggle);
-};
-
-function toggleHandler(toggle) {
-	toggle.addEventListener( "click", function(e) {
-		e.preventDefault();
-		(this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-	}
-	);
-}
-
-var menuOpen = false;
-
-$( "#button" ).click(function() {
-	if ( menuOpen ) {
-		$( "#sidebarWrapper" ).hide( "fast" );	
-	} else {
-		$( "#sidebarWrapper" ).show( "fast" );	
-	}
-
-	menuOpen = !menuOpen;
-} );
-
-$( "#sidebarWrapper" ).click(function() {
-	if ( menuOpen ) {
-
-		$.fn.fullpage.setAutoScrolling(false)
-		$( "#sidebarWrapper" ).hide( "fast" );	
-	} else {
-		$.fn.fullpage.setAutoScrolling(false)
-		$( "#sidebarWrapper" ).show( "fast" );	
-	}
-
-	menuOpen = !menuOpen;
-} );
-
-
-
-})();
-
 
 // PRELOADER
 
-jQuery(window).on('load',function() {
+// jQuery(window).on('load',function() {
 
-jQuery("#status").delay(300).fadeOut("slow");   
+// jQuery("#status").delay(300).fadeOut("slow");   
 
-jQuery("#preloader").delay(300).fadeOut("slow");
+// jQuery("#preloader").delay(300).fadeOut("slow");
 
-$.fn.fullpage.destroy('all');
 
+
+// });
+// Toggle Nav Mobile
+$(function() {
+    $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
 });
-// FP.destroy = destroy;
+
+// Nav
+
+// $(window).scroll(function() {
+//     if ($(window).scrollTop() =< 50) {
+//         $('#logoName').css('visibility' , 'visible');
+//         $('#logoK').css('visibility' , 'visible');
+//     }
+//     else {
+//         $('#logoName').css('visibility' , 'hidden');
+//         $('#logoK').css('visibility' , 'hidden');
+//     }
+// });
 
 
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
