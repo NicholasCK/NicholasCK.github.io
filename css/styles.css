@@ -535,10 +535,11 @@ footer{
   width: 100%;
   background-color: #333333;
   clear: both;
-  bottom: 0px;
+  bottom: -500px;
   text-align: center;
   height: 200px;
   position: relative;
+
 }
 
 
