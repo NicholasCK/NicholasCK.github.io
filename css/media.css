@@ -46,7 +46,7 @@ body{
 	}
 
 	#bioPara{
-		font-size: 45px;
+		font-size: 25px;
 	}
 
 	iframe{
@@ -63,11 +63,12 @@ body{
 	}
 
 	figcaption{
-		font-size: 40px;
+		font-size: 25px;
 	}
 
 	#portfolioHeader{
 		font-size: 70px;
+		margin-top: 900px;
 	}
 
 
