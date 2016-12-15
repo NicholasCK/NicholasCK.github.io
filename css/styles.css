@@ -2,6 +2,10 @@ body{
   overflow-x: hidden !important;
 }
 
+section{
+  overflow-x: hidden;
+}
+
 .col-xs-12{
 	padding-left: 0px;
 	padding-right: 0px;
