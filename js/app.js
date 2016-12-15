@@ -1,3 +1,4 @@
+
 $(window).scroll(function() {
     if ($(window).scrollTop() >= 500) {
 
@@ -31,20 +32,6 @@ $(function() {
         }
     });
 });
-
-// Nav
-
-// $(window).scroll(function() {
-//     if ($(window).scrollTop() =< 50) {
-//         $('#logoName').css('visibility' , 'visible');
-//         $('#logoK').css('visibility' , 'visible');
-//     }
-//     else {
-//         $('#logoName').css('visibility' , 'hidden');
-//         $('#logoK').css('visibility' , 'hidden');
-//     }
-// });
-
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
