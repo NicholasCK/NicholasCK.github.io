@@ -3479,6 +3479,7 @@ input[type="button"].btn-block {
 }
 .collapse.in {
   display: block;
+  width: 100%;
 }
 tr.collapse.in {
   display: table-row;
@@ -4181,6 +4182,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
+  background-color: whitesmoke;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
