@@ -23,6 +23,7 @@ body{
 	.name{
 	   font-size: 160px;
     font-family: 'Yantramanav', sans-serif;
+    color: black;
     letter-spacing: 5px;
     font-weight: 900;
     line-height: 1;
