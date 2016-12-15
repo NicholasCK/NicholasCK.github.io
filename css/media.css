@@ -237,3 +237,13 @@ body{
 
 }
 }
+
+
+
+@media only screen and (max-width: 400px) {
+
+	#portfolioHeader{
+		margin-top: 665px;
+	}
+
+}
