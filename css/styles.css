@@ -80,7 +80,7 @@ ul{
 
 #landing{
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #landingText{
@@ -110,7 +110,7 @@ ul{
 
 /*BIO*/
 #bio{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #bioRow{
@@ -173,7 +173,7 @@ iframe{
 /*SKILLS*/
 
 #skills{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #skillsHeader{
@@ -211,7 +211,7 @@ figcaption{
 
 /*PORTFOLIO*/
 #portfolio{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #workContainer{
@@ -396,7 +396,7 @@ margin-bottom: 45px;
 /*CONTACT*/
 
 #contact{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #contactHeader{
