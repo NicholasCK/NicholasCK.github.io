@@ -98,6 +98,12 @@ body{
 	}
 
 
+	.image-hover-text p{
+  	width: 350px;
+	font-weight: 300;
+	}
+
+
 	#phoneIcon figcaption, #emailIcon figcaption, #locationIcon figcaption {
     font-size: 40px;
 	}
