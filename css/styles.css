@@ -120,6 +120,40 @@ ul{
 #bioRow{
   background-color:#f1f1ee;
   margin-top: 5%;
+
+  -webkit-animation: backgroundColor 15s linear infinite;
+  -moz-animation: backgroundColor 15s linear infinite;
+  animation: backgroundColor 15s linear infinite;
+}
+
+@-webkit-keyframes backgroundColor
+{
+   0%   {background: white; }
+    20% {background: whitesmoke; }
+    40% {background: gainsboro; }
+    60% {background: gainsboro; }
+    80% {background: whitesmoke; }
+    100% {background: white; }
+}
+
+@-moz-keyframes backgroundColor
+{
+   0%   {background: white; }
+    20% {background: whitesmoke; }
+    40% {background: gainsboro; }
+    60% {background: gainsboro; }
+    80% {background: whitesmoke; }
+    100% {background: white; }
+}
+
+@keyframes backgroundColor
+{
+   0%   {background: white; }
+    20% {background: whitesmoke; }
+    40% {background: gainsboro; }
+    60% {background: gainsboro; }
+    80% {background: whitesmoke; }
+    100% {background: white; }
 }
 
 /*BIO TEXT*/
