@@ -4,16 +4,13 @@ body{
 }
 
 #title{
-
 	font-size: 55px;
 	color: #ffbee5;
 	font-family: 'Share Tech Mono', monospace;
 	text-align: center;
 	margin-bottom: 5px;
 	margin-top: 15px;
-
 }
-
 
 #playerone {
 	text-align: left;
@@ -26,9 +23,7 @@ body{
 	font-family: 'Share Tech Mono', monospace;
 	font-size: 40px;
 	color: #a5eef5;
-
 }
-
 
 #playertwo{
 	text-align: right;
@@ -41,9 +36,7 @@ body{
 	font-family: 'Share Tech Mono', monospace;
 	font-size: 40px;
 	color: #a5eef5;
-
 }
-
 
 #gamecanvas{
 	display:inline-block;

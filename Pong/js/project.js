@@ -1,5 +1,3 @@
-
-
 var canvas;
 var canvasContext;
 var ballX = 50;
@@ -43,9 +41,9 @@ window.onload = function() {
 
 	var framesPerSecond = 30;
 	setInterval(function() {
-			moveTennis();
-			drawTennis();	
-		}, 1000/framesPerSecond);
+		moveTennis();
+		drawTennis();	
+	}, 1000/framesPerSecond);
 
 	canvas.addEventListener('mousedown' , handleMouseClick);
 
@@ -62,11 +60,11 @@ function ballReset(){
 		player2Score >= WINNING_SCORE){
 
 		showingWinScreen = true;
-	}
+}
 
-	ballSpeedX = - ballSpeedX;
-	ballX = canvas.width/2;
-	ballX = canvas.height/2;
+ballSpeedX = - ballSpeedX;
+ballX = canvas.width/2;
+ballX = canvas.height/2;
 }
 
 // PLAYER 2 AI MOVEMENT
@@ -85,8 +83,8 @@ function moveTennis() {
 		return;
 	}
 
-computerMovement();
-	
+	computerMovement();
+
 	ballX += ballSpeedX;
 	ballY += ballSpeedY;
 	if(ballX < 0) {
@@ -95,34 +93,33 @@ computerMovement();
 			ballSpeedX = - ballSpeedX;
 		var deltaY = ballY - (paddle1Y + PADDLE_HEIGhT/2);
 		ballSpeedY = deltaY * 0.35;
-		}else {
+	}else {
 		player2Score ++;
 		ballReset();
 		
-			// ballSpeedX = -ballSpeedX;
-		}	
-	}
-	if(ballX > canvas.width) {
 		// ballSpeedX = -ballSpeedX;
-		if(ballY > paddle2Y &&
-			ballY < paddle2Y + PADDLE_HEIGhT){
-			ballSpeedX = - ballSpeedX;
-		var deltaY = ballY - (paddle2Y + PADDLE_HEIGhT/2);
-		ballSpeedY = deltaY * 0.35;
-		}else {
-		player1Score ++;
-		ballReset();
-		
-			// ballSpeedX = -ballSpeedX;
-		}	
-
-	}
-	if(ballY < 0){
-		ballSpeedY = - ballSpeedY;
-	}
-	if (ballY>canvas.height){
-		ballSpeedY = -ballSpeedY;
-	}
+	}	
+}
+if(ballX > canvas.width) {
+	// ballSpeedX = -ballSpeedX;
+	if(ballY > paddle2Y &&
+		ballY < paddle2Y + PADDLE_HEIGhT){
+		ballSpeedX = - ballSpeedX;
+	var deltaY = ballY - (paddle2Y + PADDLE_HEIGhT/2);
+	ballSpeedY = deltaY * 0.35;
+}else {
+	player1Score ++;
+	ballReset();
+	
+		// ballSpeedX = -ballSpeedX;
+	}	
+}
+if(ballY < 0){
+	ballSpeedY = - ballSpeedY;
+}
+if (ballY>canvas.height){
+	ballSpeedY = -ballSpeedY;
+}
 }
 
 function drawNet(){
@@ -133,34 +130,32 @@ function drawNet(){
 }
 
 function drawTennis() {
-	// TENNIS COURT
-	colorRect(0,0,canvas.width,canvas.height,'mediumseagreen');
+// TENNIS COURT
+colorRect(0,0,canvas.width,canvas.height,'mediumseagreen');
 
-	// NET
-	drawNet();
+// NET
+drawNet();
 
-	// PLAYER 1
-	colorRect(0,paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGhT,'white');
+// PLAYER 1
+colorRect(0,paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGhT,'white');
 
-	// PLAYER 2
-	colorRect(canvas.width - PADDLE_THICKNESS,paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGhT,'white');
+// PLAYER 2
+colorRect(canvas.width - PADDLE_THICKNESS,paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGhT,'white');
 
-	// WIN SCREEN
-	if (showingWinScreen) {
+// WIN SCREEN
+if (showingWinScreen) {
 
-		if(player1Score >= WINNING_SCORE){
-			canvasContext.fillText("End of Match. PLAYER 1 WINS!", 320, 227);
+	if(player1Score >= WINNING_SCORE){
+		canvasContext.fillText("End of Match. PLAYER 1 WINS!", 320, 227);
 
-		}else if(player2Score >= WINNING_SCORE){
-			canvasContext.fillText("End of Match. PLAYER 2 WINS!", 320, 227);
-
-		}
-
-		canvasContext.fillStyle = '#ffc5e3';
-		canvasContext.fillText("Click To Continue", 360, 320);
+	}else if(player2Score >= WINNING_SCORE){
+		canvasContext.fillText("End of Match. PLAYER 2 WINS!", 320, 227);
 	}
+	canvasContext.fillStyle = '#ffc5e3';
+	canvasContext.fillText("Click To Continue", 360, 320);
+}
 
-	// TENNIS BALL
+// TENNIS BALL
 colorCircle(ballX, ballY, 10, '#C6ED2C');
 
 // SCOREBOARD
@@ -168,16 +163,12 @@ canvasContext.fillText(player1Score, 100, 100);
 canvasContext.fillText(player2Score, canvas.width -100, 100);
 }
 
-
-
 function colorCircle(centerX, centerY, radius, drawColor) {
 	canvasContext.fillStyle = drawColor;
 	canvasContext.beginPath();
 	canvasContext.arc(centerX, centerY, radius, 0,Math.PI*2,true);
 	canvasContext.fill();
 }
-
-
 
 function colorRect(leftX,topY, width,height, drawColor) {
 	canvasContext.fillStyle = drawColor;

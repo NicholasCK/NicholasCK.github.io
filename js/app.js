@@ -1,29 +1,11 @@
-
 $(window).scroll(function() {
     if ($(window).scrollTop() >= 500) {
-
-        // $('#logoName').show();
-        // $('#logoK').show();
   		$('#nav').css('background-color' , 'rgba(225,225,225,0.5)');
     }
     else {
-        // $('#logoName').hide();
-        // $('#logoK').hide();
         $('#nav').css('background-color' , 'rgba(225,225,225,0)');
     }
 });
-
-// PRELOADER
-
-// jQuery(window).on('load',function() {
-
-// jQuery("#status").delay(300).fadeOut("slow");   
-
-// jQuery("#preloader").delay(300).fadeOut("slow");
-
-
-
-// });
 // Toggle Nav Mobile
 $(function() {
     $('.nav a').on('click', function(){ 

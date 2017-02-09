@@ -12,7 +12,6 @@ section{
 }
 
 /*FIXED NAVBAR*/
-
 #header{
 	position: fixed;
   width: 100%;
@@ -42,8 +41,6 @@ section{
 
 nav{
   position: fixed;
-/*  padding-left: 20px;
-  padding-right: 20px;*/
   width: 100%;
 }
 
@@ -63,7 +60,6 @@ span{
 div .collapse .navbar-collapse .nav-collapse{
   width: 100%;
   background-color:rgba(0,0,0,0.7);
-
 }
 
 ul{
@@ -81,7 +77,6 @@ ul{
 }
 
 /*LANDING*/
-
 #landing{
   overflow: hidden;
   min-height: 100vh;
@@ -120,7 +115,6 @@ ul{
 #bioRow{
   background-color:#f1f1ee;
   margin-top: 5%;
-
   -webkit-animation: backgroundColor 10s linear infinite;
   -moz-animation: backgroundColor 10s linear infinite;
   animation: backgroundColor 10s linear infinite;
@@ -157,7 +151,6 @@ ul{
 }
 
 /*BIO TEXT*/
-
 #bioText{
 	padding-left: 2%;
 	padding-right: 2%;
@@ -189,7 +182,6 @@ ul{
 }
 
 /*BIO ICONS*/
-
 #bioIcons img{
 	width: 64px;
 	height: 64px;
@@ -197,7 +189,6 @@ ul{
 }
 
 /*BIO PLAYER*/
-
 #bioPlayer{
   z-index: 2;
 }
@@ -209,7 +200,6 @@ iframe{
 }
 
 /*SKILLS*/
-
 #skills{
   min-height: 100vh;
 }
@@ -228,9 +218,9 @@ iframe{
 }
 
 #skillsLine{
-width: 92%;
-margin-right:15px;
-margin-top:0;
+  width: 92%;
+  margin-right:15px;
+  margin-top:0;
 } 
 
 #skillsHeader p{
@@ -436,7 +426,6 @@ margin-bottom: 45px;
 }
 
 /*CONTACT*/
-
 #contact{
   min-height: 100vh;
 }
