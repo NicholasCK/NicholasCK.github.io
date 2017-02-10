@@ -313,7 +313,7 @@ margin-bottom: 45px;
 
 /*PORT PIECE 1*/
 #pongContainer{
-  display: inline-block;
+  display: block;
   transition: all 0.2s linear;
   width: 100%;
 }
@@ -333,12 +333,97 @@ margin-bottom: 45px;
 
 #pongContainer p{
   color: white;
+  background: goldenrod;
 }
 
 .portOne{
-  background-color: goldenrod;
+ background: black;
 }
-/*PORT PIECE 2*/
+
+/*Todo List*/
+#todoListContainer{
+  display: block;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+#todoListImg{
+  display: block;
+}
+
+#todoListImg img{
+  border-radius: 1%;
+}
+
+#todoListContainer a{
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+#todoListContainer p{
+  color: white;
+  background: pink;
+}
+
+.portTodoList{
+  background-color: pink;
+}
+
+/*RGB GAME*/
+
+#rgbGameContainer{
+  display: block;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+#rgbGameImg{
+ display: block;
+}
+
+#rgbGameImg img{
+  border-radius: 1%;
+}
+
+#rgbGameContainer a{
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+#rgbGameContainer p{
+  color: white;
+  background: steelblue;
+}
+
+
+/*PATATAP*/
+
+#patatapContainer{
+  display: block;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+#patatapImg{
+ display: block;
+}
+
+#patatapImg img{
+  border-radius: 1%;
+}
+
+#patatapContainer a{
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+#patatapContainer p{
+  color: white;
+  background: red;
+}
+
+
+/*RELAXR*/
 #relaxrContainer{
   display: inline-block;
   width: 100%;
@@ -360,12 +445,14 @@ margin-bottom: 45px;
 
 #relaxrContainer p{
   color: white;
+   background-color: #033048;
+
 }
 
 .portTwo{
-  background-color: #033048;
+  background-color: black;
 }
-/*PORT PIECE 3*/
+/*SPOT THE DOT*/
 #spotDotContainer {
   display: inline-block;
   width: 100%;
@@ -387,11 +474,12 @@ margin-bottom: 45px;
 
 #spotDotContainer p{
   color: white;
+  background: teal;
 }
 .portThree{
-  background-color: teal; 
+  background-color: black; 
 }
-/*PORT PIECE 4*/
+/*Startup Matchmaker*/
 #startupMatchContainer{
   display: inline-block;
   width: 100%;
@@ -419,8 +507,41 @@ margin-bottom: 45px;
   background-color: black;
 }
 
-#pongImg img, #startupMatchImg img, #spotDotImg img, #relaxrImg img{
-  height:332px;
+/*GitHub Web*/
+
+#githubWebContainer{
+  display: inline-block;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
+#githubWebImg{
+ display: block;
+}
+
+#githubWebImg img{
+  border-radius: 1%;
+}
+
+#githubWebContainer a{
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+#githubWebContainer p{
+  color: white;
+  background: gray;
+}
+
+.portgithubWeb{
+  background-color: black;
+}
+
+
+/*PORT IMAGES*/
+
+#pongImg img, #todoListImg img, #rgbGameImg img, #patatapImg img, #startupMatchImg img, #spotDotImg img, #relaxrImg img, #githubWeb{
+  height:333px;
   width:468px;
   margin-top: 25px;
 }
