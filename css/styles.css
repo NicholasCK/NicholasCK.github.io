@@ -334,6 +334,7 @@ margin-bottom: 45px;
 #pongContainer p{
   color: white;
   background: goldenrod;
+  text-align: center;
 }
 
 .portOne{
@@ -363,6 +364,7 @@ margin-bottom: 45px;
 #todoListContainer p{
   color: white;
   background: pink;
+  text-align: center;
 }
 
 .portTodoList{
@@ -393,6 +395,7 @@ margin-bottom: 45px;
 #rgbGameContainer p{
   color: white;
   background: steelblue;
+  text-align: center;
 }
 
 
@@ -420,6 +423,7 @@ margin-bottom: 45px;
 #patatapContainer p{
   color: white;
   background: red;
+  text-align: center;
 }
 
 
@@ -446,6 +450,7 @@ margin-bottom: 45px;
 #relaxrContainer p{
   color: white;
    background-color: #033048;
+   text-align: center;
 
 }
 
@@ -475,6 +480,7 @@ margin-bottom: 45px;
 #spotDotContainer p{
   color: white;
   background: teal;
+  text-align: center;
 }
 .portThree{
   background-color: black; 
@@ -501,6 +507,7 @@ margin-bottom: 45px;
 
 #startupMatchContainer p{
   color: white;
+  text-align: center;
 }
 
 .portFour{
@@ -531,6 +538,7 @@ margin-bottom: 45px;
 #githubWebContainer p{
   color: white;
   background: gray;
+  text-align: center;
 }
 
 .portgithubWeb{
